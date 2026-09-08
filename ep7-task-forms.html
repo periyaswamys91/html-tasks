@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms Exercise</title>
+    </head>
+    <body>
+        <div>
+            <fieldset>
+                <legend>Registration Form</legend>
+                 <form method="post">
+                    <div>
+                    <label for="name">Name:<span style="color: red;">*</span></label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    </div> 
+                    &nbsp;
+                    <div>
+                        <label for="email">Email:<span style="color: red;">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="example@domain.com">
+                    </div>
+                    &nbsp;
+                    <div>
+                        <label for="password">Password:<span style="color: red;">*</span></label>
+                        <input type="password" id="password" name="password" required minlength="8" maxlength="20">
+                    </div>
+                    &nbsp;
+                    <div>
+                        <label for="mobile">Mobile:<span style="color: red;">*</span></label>
+                        <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number">
+                    </div>
+                    &nbsp;
+                    <div>
+                        <label for="dob">Date of Birth:<span style="color: red;">*</span></label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    &nbsp;
+                    <div>
+                        <label for="gender" >Gender:<span style="color: red;">*</span></label>
+                        <input type="radio" id="gender" name="gender" value="male" required> 
+                        <label for="gender">Male</label>
+                        <input type="radio" id="gender" name="gender" value="female" required> 
+                        <label for="gender">Female</label>
+                    </div>
+                    &nbsp;
+                    <div>
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" min="0" max="120">
+                    </div>
+                    &nbsp;
+                    <div>
+                        <label for="language">Language:</label>
+                        <input type="checkbox" id="language" name="language" value="tamil"> 
+                        <label for="language">Tamil</label>
+                        <input type="checkbox" id="language" name="language" value="english"> 
+                        <label for="language">English</label>
+                    </div>
+                    &nbsp;
+                    <div>
+                        <label for="country">Country:<span style="color: red;">*</span></label>
+                        <select id="country" name="country" required>
+                            <option value="">Select a country</option>
+                            <option value="india" selected>India</option>
+                            <option value="usa">USA</option>
+                            <option value="canada">Canada</option>
+                            <option value="uk">UK</option>
+                            <option value="australia">Australia</option>
+                        </select>
+                    </div>
+                    &nbsp;
+                    <div>
+                        <label for="address">Address:<span style="color: red;">*</span></label>
+                        <textarea id="address" name="address" rows="4" cols="50" required></textarea>
+                    </div>
+                    &nbsp;
+                    <div>
+                        <label for="file">Upload Photo:</label>
+                        <input type="file" id="file" name="file" accept=".jpg,.jpeg,.png,.pdf">
+                    </div>
+                    &nbsp;
+                    <div>
+                        <label for="comment">Comments:</label>
+                        <textarea id="comment" name="comment" rows="6" cols="50" placeholder="Enter your comments...."></textarea>
+                    </div>
+                    &nbsp;
+                    <div>
+                        <input type="submit" value="Submit">
+                        <button type="button">Cancel</button>
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </body>
+</html>
